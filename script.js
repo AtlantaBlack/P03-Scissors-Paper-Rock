@@ -1,105 +1,3 @@
-
-// function myFirstFunction() {
-//     var x = 5;
-//     alert(x * 2);
-// }
-
-// myFirstFunction();
-
-
-// function alertDouble(num) {
-//     alert(num * 2);
-// }
-
-// alertDouble(18);
-
-
-// function alertMultiplied(num1, num2) {
-//     alert(num1 * num2);
-// }
-
-// alertMultiplied(3, 5);
-// alertMultiplied(8, 21);
-
-// function introduce() {
-//     return("Hello, I'm Ophelia.");
-// }
-
-// introduce();
-
-// function triple(num) {
-//     return(num * 3);
-// }
-
-// alert( triple(7) );
-
-/*
-
-var options = ['R', 'P', 'S']
-
-var wins = 0;
-var losses = 0;
-var ties = 0;
-
-var result = {
-    wins: 0,
-    losses: 0,
-    ties: 0,
-}
-
-function playGame() {
-    var userChoice = prompt("Enter R, P or S");
-    userChoice = userChoice.toUpperCase();
-
-    if (!options.includes(userChoice)) {
-        alert("Invalid input " + userChoice);
-        playGame();
-        return;
-    }
-
-    var index = Math.floor(Math.random() * options.length);
-    var computerChoice = options[index];
-
-    alert("userChoice=" + userChoice + " The computer chose " + computerChoice);
-
-    if (userChoice === computerChoice) {
-        // tie
-        result.ties++;
-    } else if (userChoice === "R" && computerChoice === "S") {
-        result.wins++;
-    } else if (userChoice === "S" && computerChoice === "P") {
-        result.wins++;
-    } else if (userChoice === "P" && computerChoice === "R") {
-        result.wins++;
-    } else {
-        result.losses++;
-    }
-
-    // shorthand way, using OR operator
-    
-    // if (userChoice === computerChoice) {
-    //     result.ties++;
-    // } else if (
-    //     (userChoice === "R" && computerChoice === "S") || 
-    //     (userChoice === "S" && computerChoice === "P") ||
-    //     (userChoice === "P" && computerChoice === "R")) {
-    //     result.wins++;
-    // } else {
-    //     result.losses++;
-    // }
-
-    alert("Stats:\n\nWins: " + result.wins + "\nLosses: " + result.losses + "\nTies: " + result.ties)
-
-    if (confirm("Would you like to play again?")) {
-        playGame();
-    }
-}
-
-// run the game
-playGame();
-
-*/
-
 // SCISSORS, PAPER, ROCK GAME CODE BELOW:
 
 // make an array for user picks
@@ -111,19 +9,6 @@ var scores = {
     losses: 0,
     ties: 0
 }
-
-// practice: MAKE A STRING INPUT DO A CAPITAL FIRST LETTER
-
-// function capitaliseFirstLetter(str) {
-//     const capitalised = str.charAt(0).toUpperCase() + str.slice(1);
-//     return capitalised;
-// }
-
-// const string = prompt("type something");
-// const result = capitaliseFirstLetter(string);
-
-// alert(result);
-
 
 // make the function to playGame
 
@@ -199,3 +84,17 @@ function playGame() {
 
 //call the function to start the game
 askToPlay();
+
+
+
+// PRACTICE: make a string input capitalise the first letter
+
+// function capitaliseFirstLetter(str) {
+//     const capitalised = str.charAt(0).toUpperCase() + str.slice(1);
+//     return capitalised;
+// }
+
+// const string = prompt("type something");
+// const result = capitaliseFirstLetter(string);
+
+// alert(result);
