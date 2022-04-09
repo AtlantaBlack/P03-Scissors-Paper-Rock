@@ -1,5 +1,5 @@
-## Scissors Paper Rock game
+## Scissors, Paper, Rock game
 
-Done using Javascript
+Simple Scissors, Paper, Rock game built using Javascript and window prompts.
 
-https://atlantablack.github.io/P03-Scissors-Paper-Rock/
+https://atlantablack.github.io/Scissors-Paper-Rock/
